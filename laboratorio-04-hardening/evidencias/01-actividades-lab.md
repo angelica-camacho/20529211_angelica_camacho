@@ -160,7 +160,7 @@ Cada conexión en PostgreSQL es un proceso del sistema operativo que consume mem
 GRANT y REVOKE solo controlan el acceso a través del motor de PostgreSQL. Si un usuario del sistema operativo puede leer los archivos directamente (datos, backups, logs, pg_hba.conf), se salta esos permisos por completo. 
 
 # Actividad 13 — Revisar exposición de red
-![alt text](<Captura de pantalla 2026-10-24 182958.png>)
+![alt text](12-config-so-pshell.png)
 (Como se esta trabajando en windows, tuve que utilizar otro comando)
 
 **Dirección de escucha:**
