@@ -11,7 +11,7 @@ _Gestión de seguridad y desempeño de bases de datos_
 | **5** | 2026-11-06 22:04:27.504 CST | postgres | ::1 (pgAdmin) | Identidad | DROP ROLE rol_temporal: se eliminó el rol temporal. | Sí | Bitácora, PID 16008 |
 | **6** | 2026-11-06 22:26:22.244 CST | postgres | ::1 (pgAdmin) | Identidad | DROP ROLE soporte_ana: PostgreSQL lo rechazó porque el rol aún tenía privilegios sobre clientes. | No | Bitácora, PID 20896 (ERROR, DETAIL y STATEMENT) |
 | **7** | 2026-11-06 22:59:11 CST | app_ventas | 127.0.0.1 (app-ventas-web) | Modificación de dato | UPDATE del RFC del cliente 3, de GAMA780912XYZ a GAMA780912ZZZ. | Sí | Auditoría, id_evento 1 |
-| **8** | (2026-11-06 23:20:28.593 CST  | postgres | [local] (psql) | Manipulación de la auditoría | Desactivó el disparador, cambió el RFC del cliente 3 a GAMA780912GHI y lo reactivó; el cambio no quedó en auditoria cambios_clientes. | Sí | Bitácora, PID 260; la auditoría sigue en 3 eventos |
+| **8** | 2026-11-06 23:20:28.593 CST | postgres | ::1 (pgAdmin 4) | Manipulación de la auditoría | Desactivó el disparador (23:20:25), cambió el RFC del cliente 3 a GAMA780912GHI (23:20:28) y lo reactivó (23:20:31); el cambio no quedó en auditoria.cambios_clientes. | Sí | Bitácora, PID 14888 (líneas 298, 300 y 302); la auditoría sigue en 3 eventos |
 
 ![alt text](image-6.png)
 
