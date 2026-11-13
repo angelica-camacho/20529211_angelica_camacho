@@ -1,0 +1,270 @@
+[
+  {
+    "op": "query",
+    "ns": "comercial.clientes",
+    "command": {
+      "find": "clientes",
+      "filter": {
+        "ciudad": "Culiacán"
+      },
+      "projection": {
+        "nombre": 1,
+        "ciudad": 1
+      },
+      "lsid": {
+        "id": "596e623b-cd5b-4f13-a170-b7b19d5a97e4"
+      },
+      "$db": "comercial"
+    },
+    "keysExamined": 0,
+    "docsExamined": 5,
+    "nBatches": 1,
+    "cursorExhausted": true,
+    "numYield": 0,
+    "nreturned": 3,
+    "planCacheShapeHash": "7DC3B97B",
+    "queryHash": "7DC3B97B",
+    "planCacheKey": "A66A91A7",
+    "queryShapeHash": "80D0756BB34496102E0BB3987B181D047225953031758516EA5A57EF6619AF89",
+    "queryFramework": "classic",
+    "locks": {
+      "Global": {
+        "acquireCount": {
+          "r": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {},
+    "responseLength": 300,
+    "protocol": "op_msg",
+    "millis": 0,
+    "planSummary": "COLLSCAN",
+    "planningTimeMicros": 360,
+    "execStats": {
+      "isCached": false,
+      "stage": "PROJECTION_SIMPLE",
+      "nReturned": 3,
+      "executionTimeMillisEstimate": 0,
+      "works": 6,
+      "advanced": 3,
+      "needTime": 2,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "transformBy": {},
+      "inputStage": {
+        "stage": "COLLSCAN",
+        "filter": {
+          "ciudad": {
+            "$eq": "Culiacán"
+          }
+        },
+        "nReturned": 3,
+        "executionTimeMillisEstimate": 0,
+        "works": 6,
+        "advanced": 3,
+        "needTime": 2,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "direction": "forward",
+        "docsExamined": 5
+      }
+    },
+    "ts": "2026-11-08T21:05:54.223Z",
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "update",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 3
+      },
+      "u": {
+        "$set": {
+          "rfc": "GAMA780912XYZ"
+        }
+      },
+      "multi": false,
+      "upsert": false
+    },
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "nMatched": 1,
+    "nModified": 1,
+    "nUpserted": 0,
+    "keysInserted": 0,
+    "keysDeleted": 0,
+    "numYield": 0,
+    "locks": {
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "millis": 0,
+    "planSummary": "EXPRESS_IXSCAN { _id: 1 },EXPRESS_UPDATE",
+    "planningTimeMicros": 121,
+    "execStats": {
+      "isCached": false,
+      "stage": "EXPRESS_UPDATE",
+      "keyPattern": "{ _id: 1 }",
+      "indexName": "_id_",
+      "keysExamined": 1,
+      "docsExamined": 1,
+      "nReturned": 0,
+      "nWouldModify": 1,
+      "nWouldUpsert": 0,
+      "nWouldDelete": 0
+    },
+    "ts": "2026-11-08T21:05:54.231Z",
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  },
+  {
+    "op": "remove",
+    "ns": "comercial.clientes",
+    "command": {
+      "q": {
+        "_id": 2
+      },
+      "limit": 1
+    },
+    "keysExamined": 1,
+    "docsExamined": 1,
+    "ndeleted": 1,
+    "keysDeleted": 1,
+    "numYield": 0,
+    "locks": {
+      "ReplicationStateTransition": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Global": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Database": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      },
+      "Collection": {
+        "acquireCount": {
+          "w": {
+            "high": 0,
+            "low": 1,
+            "unsigned": false
+          }
+        }
+      }
+    },
+    "flowControl": {
+      "acquireCount": {
+        "high": 0,
+        "low": 1,
+        "unsigned": false
+      }
+    },
+    "millis": 0,
+    "planSummary": "EXPRESS_IXSCAN { _id: 1 },EXPRESS_DELETE",
+    "planningTimeMicros": 131,
+    "execStats": {
+      "isCached": false,
+      "stage": "EXPRESS_DELETE",
+      "keyPattern": "{ _id: 1 }",
+      "indexName": "_id_",
+      "keysExamined": 1,
+      "docsExamined": 1,
+      "nReturned": 0,
+      "nWouldModify": 0,
+      "nWouldUpsert": 0,
+      "nWouldDelete": 1
+    },
+    "ts": "2026-11-08T21:05:54.237Z",
+    "client": "127.0.0.1",
+    "appName": "app-ventas-web",
+    "allUsers": [
+      {
+        "user": "app_ventas",
+        "db": "comercial"
+      }
+    ],
+    "user": "app_ventas@comercial"
+  }
+]
