@@ -12,4 +12,4 @@ _Gestión de seguridad y desempeño de bases de datos_
 
 **¿Cambió alguien los privilegios de app_ventas** 
 
-Sí, yo, con el usuario admin, en la Actividad 7 ya que le otorgué el rol dbAdmin sobre comercial con grantRolesToUser. Lo puedo probar con las dos instantáneas, porque en la primera app_ventas tenía solo readWrite y en la segunda tenía readWrite y dbAdmin. Lo que no puedo demostrar es quién lo hizo ni cuándo exactamente, porque el perfilador (incluso en nivel 2) y la bitácora dieron 0 coincidencias para grantRoles. 
+Sí, yo, con el usuario admin (lo sé por que yo lo hice no por que se haya registrado), en la Actividad 7 ya que le otorgué el rol dbAdmin sobre comercial con grantRolesToUser. Lo puedo probar con las dos instantáneas, porque en la primera app_ventas tenía solo readWrite y en la segunda tenía readWrite y dbAdmin. Lo que no puedo demostrar es quién lo hizo ni cuándo exactamente, porque el perfilador (incluso en nivel 2) y la bitácora dieron 0 coincidencias para grantRoles. 
