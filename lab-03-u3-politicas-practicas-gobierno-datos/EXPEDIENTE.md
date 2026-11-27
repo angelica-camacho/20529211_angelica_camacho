@@ -161,7 +161,7 @@ El diccionario de clientes está en el motor mediante COMMENT ON TABLE y COMMENT
 
 Los hashes se calculan con SHA-256, después de redactar y revisar cada archivo.
 
-| ID | Archivo | Contenido | SHA-256 |
+| ID | Archivo | Contenido | 
 |---|---|---|---|
 | E1 | evidencias/E1-configuracion-registro.txt | Parámetros de registro de PostgreSQL|
 | E2 | evidencias/E2-privilegios.txt | Privilegios por rol y tabla |
@@ -172,6 +172,6 @@ Los hashes se calculan con SHA-256, después de redactar y revisar cada archivo.
 | E5 | evidencias/E5-indice-archivos.txt | Nombre original de cada archivo rotado | 
 | E6 | evidencias/system-profile.json | Perfilado de MongoDB  |
 | E6 | evidencias/bitacora-mongod.log | Bitácora de mongod |
-| E6 | Comparación de la Actividad 9 (LAB-02) | Comparación de privilegi
+| E6 | Comparación de la Actividad 9 (LAB-02) | Comparación de privilegios |
 
 **Los hashes se encuentran en el respectivo archivo**
