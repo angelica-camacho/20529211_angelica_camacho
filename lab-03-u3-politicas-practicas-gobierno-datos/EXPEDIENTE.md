@@ -162,7 +162,7 @@ El diccionario de clientes está en el motor mediante COMMENT ON TABLE y COMMENT
 Los hashes se calculan con SHA-256, después de redactar y revisar cada archivo.
 
 | ID | Archivo | Contenido | 
-|---|---|---|---|
+|---|---|---|
 | E1 | evidencias/E1-configuracion-registro.txt | Parámetros de registro de PostgreSQL|
 | E2 | evidencias/E2-privilegios.txt | Privilegios por rol y tabla |
 | E3 | evidencias/E3-disparadores.txt | Estado de los disparadores | 
