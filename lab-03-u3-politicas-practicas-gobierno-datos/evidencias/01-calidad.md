@@ -8,6 +8,7 @@
 | C2 | RFC incompleto | 7 | Formato del RFC | Dueño del dato, con validación del cliente | Contactar al cliente para obtener el RFC completo (13 caracteres, el actual tiene 12) y corregirlo |
 | C3 | RFC faltante (nulo) | 8 | Completitud del RFC | Dueño del dato (responsable de clientes / ventas) | Solicitar el RFC al cliente y capturarlo; evaluar si el campo debe ser obligatorio |
 | C4 | Edad fuera de rango (-3) | 8 | Rango válido de edad (18 a 120) | Dueño del dato | Verificar la fecha de nacimiento real y corregir la edad; agregar un `CHECK (edad BETWEEN 18 AND 120)` para evitar que se repita |
+
 **¿Por qué el DBA no debe corregir por su cuenta el RFC del registro 7?**
 
 Porque el DBA es custodio del dato, no su propietario. El RFC LOAA850315AB tiene 12 caracteres entonces no es correcto y el DBA no puede deducirla ya que es un dato fiscal que solo conoce el cliente y si la inventa o la adivina, introduce un dato falso que pasaría la validación de formato pero seguiría siendo incorrecto, y eso es peor que un dato incompleto. Además, el registro 7 es posible duplicado del 1, así que primero hay que decidir cuál es el registro válido. Esa decisión le corresponde al dueño del dato (responsable de clientes), y el DBA solo ejecuta la corrección una vez autorizada y documentada.  
