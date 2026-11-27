@@ -16,6 +16,7 @@
 **1. ¿Por qué la bitácora de cambios de privilegios merece más tiempo de conservación que la de consultas rutinarias?**
 
 Porque es evidencia de quién dio o quitó accesos y de cuándo, y esos cambios suelen descubrirse tiempo después, como cuando hay una investigación o una auditoría. Tiene poco volumen y un impacto muy alto, mientras que las consultas rutinarias son muchas, valen poco individualmente y pueden contener datos personales, así que conservarlas mucho tiempo cuesta más y aumenta el riesgo. Es mejor tener poca información útil que mucha información irrelevante.
+
 **2. ¿Qué control de integridad aplicarás a las bitácoras exportadas?**
 
 Al exportar cada archivo se podría calcular su hash SHA-256 (por ejemplo como en la práctica de MongoDB) y guardarse por separado con fecha y responsable. Los archivos pueden almacenar fuera del servidor, en modo de solo lectura, donde el DBA no pueda modificarlos. Periódicamente se vuelve a calcular el hash y se compara con el original y si no coincide, el archivo fue modificado.
