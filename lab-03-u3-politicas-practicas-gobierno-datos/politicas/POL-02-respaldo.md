@@ -12,4 +12,4 @@
 
 **Evidencia:** Hoy no existe en LAB-01 a LAB-03 un registro de respaldos ni de pruebas de restauración. Hay que crear uno con fecha, alcance, responsable y resultado de la verificación.
 
-**Revisión:**Cada año. El procedimiento técnico se definirá en la Unidad V.
+**Revisión:** Cada año. El procedimiento técnico se definirá en la Unidad V.
